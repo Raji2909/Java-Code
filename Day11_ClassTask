@@ -1,4 +1,15 @@
 package completetask.day11.demo;
+
+public class ClassTaskA {
+	public void Game () {
+		System.out.println("I am a football player");
+		}
+
+}
+
+
+
+package completetask.day11.demo;
 import completetask.day11.demo.ClassTaskA;
 
 public class ClassB extends ClassTaskA {
