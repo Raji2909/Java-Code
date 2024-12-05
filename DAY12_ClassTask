@@ -1,0 +1,44 @@
+
+package day_12ClasstaskA;
+
+public class ClassTaskA {
+	    public void manager () {
+	    	System.out.println("project A was assigned by Manager");
+	    	}
+
+}
+
+package day_12ClasstaskB;
+
+import day_12ClasstaskA.ClassTaskA;
+
+public class ClassTaskB extends ClassTaskA {
+	       public void teamleader () {
+	    	   System.out.println("Project A was assigned to Teamleader");
+	       }
+	       
+	       public static void main(String[] args) {
+	    	   ClassTaskB obj = new ClassTaskB ();
+	    	      obj.manager ();
+	    	      obj.teamleader ();
+	    	      
+	       }
+}
+
+package day_12ClasstaskC;
+
+import day_12ClasstaskB.ClassTaskB;
+
+public class ClassTaskC extends ClassTaskB {
+       public void user () {
+    	   System.out.println("Project A was Allotted to all the users of the Team");
+       }
+       public static void main(String[] args) {
+    	   ClassTaskC obj = new ClassTaskC ();
+ 	      obj.manager ();
+ 	      obj.teamleader ();
+ 	      obj.user ();
+ 	      
+       }
+       
+}
