@@ -1,0 +1,37 @@
+package day_13Classtask;
+
+public class Day_13Classtask {
+	public static void main(String[] args) {
+    	 int h = 18;
+// Arithmetic Exception model
+    	 try {
+    	 int r = h/0;
+    	 System.out.println("Divided value :" +r); 
+     }   catch (Exception q) {
+    	 System.out.println("Exception Type:" +q);
+     }   finally {
+    	 System.out.println("Exception is handled");
+     }
+    	 
+// Null Point Exception model
+         String s = null;
+         try {
+        	 System.out.println(s.length());
+        }catch (NullPointerException b) {
+        	 System.out.println("Exception type: "+b);
+        }finally {
+        	 System.out.println("Exception is Handled");
+         } 
+}
+// Array Index Out of Bound Exception model
+     int hr [] = new int [3]; {
+     hr[0]=18;
+     hr[1]=29;
+     try {
+    	 hr[2]=50;
+     } catch (ArrayIndexOutOfBoundsException e) {
+    	 System.out.println("Exception Type: "+e); 
+    	  }
+}
+}
+// I didn't get the output of Array Index Out of Bound Exception model. I don't no what the error I did...?
