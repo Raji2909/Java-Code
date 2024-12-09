@@ -1,0 +1,55 @@
+package day_14Classproject;
+
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.TreeSet;
+import java.util.Set;
+
+public class SetClass {
+	public static void main(String[] args) {
+		Set <Integer> set1 = new HashSet <Integer>();
+		set1.add(5);
+		set1.add(10);
+		set1.add(15);
+		set1.add(20);
+		set1.add(25);
+	System.out.println(set1);
+	System.out.println(set1.size());
+	
+	
+	Set <Integer> set2 = new LinkedHashSet <Integer>();
+	set2.add(5);
+	set2.add(10);
+	set2.add(15);
+	set2.add(20);
+	set2.add(25);
+System.out.println(set2);
+
+
+Set <Integer> set3 = new TreeSet <Integer>();
+set3.add(50);
+set3.add(100);
+set3.add(25);
+set3.add(200);
+set3.add(250);
+System.out.println(set3);
+
+
+for (Integer integer : set3)  {
+	System.out.println(integer);
+}
+
+     set3.remove(200);
+     System.out.println(set3);
+     
+     System.out.println(set3.contains(250));
+     
+     System.out.println(set3.isEmpty());
+     
+     set3.removeAll(set1);
+     System.out.println(set3);
+     
+     
+	}
+
+}
